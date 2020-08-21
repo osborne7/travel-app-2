@@ -1,0 +1,85 @@
+$primary-font: 'Major Mono Display', monospace;
+$secondary-font: 'Montserrat', sans-serif;
+
+body {
+    font-family: $secondary-font;
+    font-size: 1.2em;
+}
+
+.head {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1.5px #1E88E5 solid;
+    max-width: 80%;
+    margin: 1em auto;
+    padding: 2em;
+    border-radius: 3em;
+}
+
+.title-holder {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.title {
+    font-size: 3.5em;
+    font-family: $primary-font;
+}
+
+.map {
+    height: 5em;
+    align-self: center;
+}
+
+.description {
+    text-align: center;
+    padding: .5em 0em;
+    margin-top: 2em;
+}
+
+.user-input {
+    align-self: center;
+}
+
+#generate {
+    align-self: center;
+    height: 4em;
+    width: 8em;
+    border-radius: 1em;
+    background-color: #0D47A1;
+    color: white;
+    font-family: $primary-font;
+    font-size: 1em;
+    transition: all .3s;
+}
+
+#generate:hover {
+    background-color: #1976D2;
+    cursor: pointer;
+}
+
+#generate:focus {
+    outline: #B2EBF2 dotted 1px;
+    box-shadow: none;
+}
+
+.holder {
+    padding: .6em;
+    & label {
+        padding: .5em;
+    }
+}
+
+input {
+    padding: 0.5em;
+    font-family: $secondary-font;
+    border: 1px solid #26C6DA;
+}
+
+#place {
+    width: 45%;
+}
